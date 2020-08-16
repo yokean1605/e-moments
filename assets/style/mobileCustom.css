@@ -1,0 +1,189 @@
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+    /* HOMEPAGE */
+    .carousel-item .w-100 {
+        width: 100vw;
+        height: 425px;
+        display: flex;
+        object-fit: cover;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        display: none;
+    }
+    .landingText {
+        width: 16rem;
+        height: 17rem;
+        font-family: 'Playfair Display', serif;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        margin-top: -10vh;
+        margin-left: 6vw;
+    }
+    .landingText .card-body {
+        padding: 15px !important;
+    }
+    .landingText h5 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 29px;
+        line-height: 53px;
+    }
+    .landingText p {
+        width: 250px;
+        height: 67px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    /* aboutSection */
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15vh;
+    }
+    .aboutPhoto {
+        width: 40%;
+        height: 50vh;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 10vw; */
+        /* border: 1px red solid; */
+    }
+    .aboutText {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        padding: 20px;
+        /* margin-top: 10vh !important; */
+        /* margin-left: -1vw !important; */
+    }
+    .aboutText h3 {
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 51px;
+    }
+    .aboutText span {
+        width: 75px;
+        /* height: 5px !important; */
+        /* background-color: #FFC602; */
+        margin-top: -15px;
+        /* margin-left: 4vw; */
+        border: 5px #FFC602 solid;
+    }
+    .aboutText p {
+        width: 283px;
+        height: 113px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 35px;
+        margin-top: 21px;
+        /* border: 1px red solid; */
+    }
+    .aboutText a {
+        width: 270px;
+        height: 57px;
+        background: #826A17;
+        border-radius: 5px;
+        padding: 15px 80px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-top: 103px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .landingText {
+        width: 18rem;
+    }
+    .landingText p {
+        width: 340px;
+    }
+    /* aboutSection */
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15vh;
+    }
+    .aboutPhoto {
+        width: 40%;
+        height: 50vh;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 10vw; */
+        /* border: 1px red solid; */
+    }
+    .aboutText {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        padding: 20px;
+        /* margin-top: 10vh !important; */
+        /* margin-left: -1vw !important; */
+    }
+    .aboutText h3 {
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 51px;
+    }
+    .aboutText span {
+        width: 75px;
+        /* height: 5px !important; */
+        /* background-color: #FFC602; */
+        margin-top: -15px;
+        /* margin-left: 4vw; */
+        border: 5px #FFC602 solid;
+    }
+    .aboutText p {
+        width: 283px;
+        height: 113px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 35px;
+        margin-top: 21px;
+        /* border: 1px red solid; */
+    }
+    .aboutText a {
+        width: 270px;
+        height: 57px;
+        background: #826A17;
+        border-radius: 5px;
+        padding: 15px 80px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-top: 103px;
+    }
+}

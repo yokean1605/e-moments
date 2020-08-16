@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- Fon Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/style/custom2.css" />
+    <!-- <link rel="stylesheet" href="../assets/style/custom.css" /> -->
+    <!-- <link rel="stylesheet" href="../assets/style/mobileCustom.css" /> -->
+
+    <title>Moments</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #2a2d2d;"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../assets/images/Logo New E-MOMENT tanpa BG.png"
+            width="186"
+            height="70"
+            
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#aboutSection">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="moment.html">Moments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="package.html">Package</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#testimonialSection">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#articleSection">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar custom -->
+    <div class="container-navbar">
+      <!-- Navbar Desktop -->
+      <div class="navbarDesktop">
+        <div class="navbarBrand">
+          <a href="../index.html">
+            <img
+              src="../assets/images/Logo New E-MOMENT tanpa BG.png"
+              alt="E-MOMENT"
+            />
+          </a>
+        </div>
+        <div class="navbarMenu">
+          <a href="../index.html#aboutSection">About</a>
+          <a href="moment.html">Moments</a>
+          <a href="package.html">Package</a>
+          <a href="../index.html#testimonialSection">Testimonials</a>
+          <a href="../index.html#articleSection">Article</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Hero Section-->
+    <div class="container-contactHero">
+      <div class="contactHero">
+        <h3>
+          Wall of Beautiful Moments
+        </h3>
+      </div>
+    </div>
+
+    <!-- Moments Section -->
+    <div class="container-moments">
+      <!-- <div class="moment">
+        <h3>Wall Of Beautiful Moments</h3>
+        <span></span>
+      </div> -->
+      <div class="categoryMoment">
+        <button class="tabLink fillBg" onclick="openMoment(event,'family')">
+          FAMILY
+        </button>
+        <button class="tabLink" onclick="openMoment(event,'maternity')">
+          MATERNITY
+        </button>
+        <button class="tabLink" onclick="openMoment(event,'graduation')">
+          GRADUATION
+        </button>
+        <button class="tabLink" onclick="openMoment(event,'newborn')">
+          NEWBORN
+        </button>
+        <button class="tabLink" onclick="openMoment(event,'group')">
+          GROUP
+        </button>
+      </div>
+      <!-- moment lightbox-->
+      <div class="momentSelected">
+        <div id="family" class="familyMoment moments">
+          <div class="momentsBox momentsBox1">
+            <div class="moments1">
+              <img
+                src="../assets/images/Homepage/IMG_5485 copy.jpg"
+                alt="photo.jpg"
+              />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(1)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img
+                src="../assets/images/Homepage/IMG_7092 Perbesaran 30x40.jpg"
+                alt="photo.jpg"
+              />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(2)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img
+                src="../assets/images/Homepage/IMG_4356 Canvas 60x90 ok.jpg"
+                alt="photo.jpg"
+              />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(3)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="momentsBox momentsBox2">
+            <div class="moments1">
+              <img
+                src="../assets/images/Homepage/IMG_4746 copy.jpg"
+                alt="photo.jpg"
+              />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(4)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img
+                src="../assets/images/Homepage/IMG_9624 copy.jpg"
+                alt="photo.jpg"
+              />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(5)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img
+                src="../assets/images/Homepage/IMG_4746 copy.jpg"
+                alt="photo.jpg"
+              />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(6)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="maternity"
+          class="maternityMoment moments"
+          style="display: none;"
+        >
+          <div class="momentsBox momentsBox1">
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/maternity/IMG_0407 copy.jpg" alt="IMG_0407_copy.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(1)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/maternity/IMG_0521 copy.jpg" alt="IMG_0521_copy.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(2)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/maternity/IMG_5639 copy.jpg" alt="IMG_5639_copy.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(3)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="momentsBox momentsBox2">
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/maternity/IMG_0852 Cover Album.jpg" alt="IMG_0852_Cover_Album.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(4)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/maternity/IMG_9958 copy.jpg" alt="IMG_9958_copy.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(5)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/maternity/IMG_0693 copy.jpg" alt="IMG_0693_copy.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(6)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="graduation"
+          class="graduationMoment moments"
+          style="display: none;"
+        >
+          <div class="momentsBox momentsBox1">
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/graduation/IMG_2892 copy.jpg" alt="IMG_2892_copy.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(1)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/graduation/IMG_7334 Album Tengah.jpg" alt="IMG_7334.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(2)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/graduation/IMG_8255 copy.jpg" alt="IMG_8255.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(3)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="momentsBox momentsBox2">
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/graduation/IMG_9154 copy.jpg" alt="img_9154.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(4)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/graduation/IMG_9563 Album Kiri.jpg" alt="IMG_9563.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(5)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/graduation/IMG_2822 copy.jpg" alt="IMG_2822.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(6)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="newborn" class="newbornMoment moments" style="display: none;">
+          <div class="momentsBox momentsBox1">
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/newborn/IMG_0739 copy.jpg" alt="IMG_0739.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(1)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/newborn/IMG_2485 copy.jpg" alt="img_2485.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(2)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/newborn/IMG_2621 copy.jpg" alt="IMG_2621.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(3)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="momentsBox momentsBox2">
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/newborn/IMG_3628 copy.jpg" alt="img_3628.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(4)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/newborn/IMG_3753 copy.jpg" alt="IMG_3753.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(5)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/newborn/IMG_3793 copy.jpg" alt="IMG_3793.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(6)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="group" class="groupMoment moments" style="display: none;">
+          <div class="momentsBox momentsBox1">
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/family/IMG_0650 copy.jpg" alt="IMG_0650.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(1)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/family/IMG_4356 Canvas 60x90 ok.jpg" alt="IMG_4356.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(2)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/family/IMG_4497 copy.jpg" alt="IMG_4497.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(3)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="momentsBox momentsBox2">
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/family/IMG_4606 Perbesaran 30x40.jpg" alt="IMG_4606.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(4)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/family/IMG_4804 copy.jpg" alt="IMG_4804.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(5)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+            <div class="moments1">
+              <img src="../assets/images/MomentPage/family/IMG_5166 copy.jpg" alt="IMG_5166.jpg" />
+              <div class="middle">
+                <a href="#blank" onclick="openModal();currentSlide(6)"
+                  >VIEW STORY</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- lightbox modal -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <img src="../assets/images/Homepage/IMG_5485 copy.jpg" />
+            <div class="card-body cardStory">
+              <h5 class="card-title">Story</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img src="../assets/images/Homepage/IMG_7092 Perbesaran 30x40.jpg" />
+            <div class="card-body cardStory">
+              <h5 class="card-title">Story</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img src="../assets/images/Homepage/IMG_4356 Canvas 60x90 ok.jpg" />
+            <div class="card-body cardStory">
+              <h5 class="card-title">Story</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img src="../assets/images/Homepage/IMG_4746 copy.jpg" />
+            <div class="card-body cardStory">
+              <h5 class="card-title">Story</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img src="../assets/images/Homepage/IMG_9624 copy.jpg" />
+            <div class="card-body cardStory">
+              <h5 class="card-title">Story</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img src="../assets/images/Homepage/IMG_4746 copy.jpg" />
+            <div class="card-body cardStory">
+              <h5 class="card-title">Story</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <a class="prev prevModal" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next nextModal" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- thumbnail -->
+          <div class="thumbnail">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="../assets/images/Homepage/IMG_5485 copy.jpg"
+                onclick="currentSlide(1)"
+                alt="Nature and sunrise"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor cursor2"
+                src="../assets/images/Homepage/IMG_7092 Perbesaran 30x40.jpg"
+                onclick="currentSlide(2)"
+                alt="Snow"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor cursor3"
+                src="../assets/images/Homepage/IMG_4356 Canvas 60x90 ok.jpg"
+                onclick="currentSlide(3)"
+                alt="Mountains and fjords"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor cursor4"
+                src="../assets/images/Homepage/IMG_4746 copy.jpg"
+                onclick="currentSlide(4)"
+                alt="Northern Lights"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor cursor5"
+                src="../assets/images/Homepage/IMG_9624 copy.jpg"
+                onclick="currentSlide(5)"
+                alt="Northern Lights"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor cursor6"
+                src="../assets/images/Homepage/IMG_4746 copy.jpg"
+                onclick="currentSlide(6)"
+                alt="Northern Lights"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Moment Mobile -->
+    <div class="container-momentMobile momentPage">
+      <div class="momentMobileTitle momentPageTitle">
+        <h3>Wall Of Beautiful Moments</h3>
+        <span></span>
+      </div>
+      <div class="momentMobile">
+        <div class="familyMomentMobile momentMobileBox">
+          <!-- family moment is works! -->
+          <h3>Family</h3>
+          <div class="momentPhotoBox">
+            <div class="photoScroll">
+              <img src="../assets/images/Homepage/IMG_5485 copy.jpg"  />
+              <img src="../assets/images/Homepage/IMG_7092 Perbesaran 30x40.jpg" class="photoScroll1"  />
+              <img src="../assets/images/Homepage/IMG_4356 Canvas 60x90 ok.jpg" class="photoScroll1"  />
+              <img src="../assets/images/Homepage/IMG_4746 copy.jpg" class="photoScroll1"  />
+              <img src="../assets/images/Homepage/IMG_9624 copy.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/maternity/IMG_0693 copy.jpg" class="photoScroll1"  />
+            </div>
+          </div>
+        </div>
+        <div class="maternityMomentMobile momentMobileBox">
+          <!-- maternity moment is works! -->
+          <h3>Maternity</h3>
+          <div class="momentPhotoBox">
+            <div class="photoScroll">
+              <img src="../assets/images/MomentPage/maternity/IMG_0407 copy.jpg" alt="IMG_0407_copy.jpg"  />
+              <img src="../assets/images/MomentPage/maternity/IMG_0521 copy.jpg" alt="IMG_0521_copy.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/maternity/IMG_5639 copy.jpg" alt="IMG_5639_copy.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/maternity/IMG_0852 Cover Album.jpg" alt="IMG_0852_Cover_Album.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/maternity/IMG_9958 copy.jpg" alt="IMG_9958_copy.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/maternity/IMG_0693 copy.jpg" alt="IMG_0693_copy.jpg" class="photoScroll1"  />
+            </div>
+          </div>
+        </div>
+        <div class="graduationMomentMobile momentMobileBox">
+          <!-- graduation moment is works! -->
+          <h3>Graduation</h3>
+          <div class="momentPhotoBox">
+            <div class="photoScroll">
+              <img src="../assets/images/MomentPage/graduation/IMG_2892 copy.jpg"  />
+              <img src="../assets/images/MomentPage/graduation/IMG_7334 Album Tengah.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/graduation/IMG_8255 copy.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/graduation/IMG_9154 copy.jpg" alt="img_9154.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/graduation/IMG_9563 Album Kiri.jpg" alt="IMG_9563.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/graduation/IMG_2822 copy.jpg" alt="IMG_2822.jpg" class="photoScroll1"  />
+            </div>
+          </div>
+        </div>
+        <div class="newbornMomentMobile momentMobileBox">
+          <!-- newborn moment is works! -->
+          <h3>Newborn</h3>
+          <div class="momentPhotoBox">
+            <div class="photoScroll">
+              <img src="../assets/images/MomentPage/newborn/IMG_0739 copy.jpg" alt="IMG_0739.jpg"  />
+              <img src="../assets/images/MomentPage/newborn/IMG_2485 copy.jpg" alt="img_2485.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/newborn/IMG_2621 copy.jpg" alt="IMG_2621.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/newborn/IMG_3628 copy.jpg" alt="img_3628.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/newborn/IMG_3753 copy.jpg" alt="IMG_3753.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/family/IMG_5166 copy.jpg" alt="IMG_5166.jpg" class="photoScroll1"  />
+            </div>
+          </div>
+        </div>
+        <div class="groupMomentMobile momentMobileBox">
+          <!-- group moment is works! -->
+          <h3>Group</h3>
+          <div class="momentPhotoBox">
+            <div class="photoScroll">
+              <img src="../assets/images/MomentPage/family/IMG_0650 copy.jpg" alt="IMG_0650.jpg"  />
+              <img src="../assets/images/MomentPage/family/IMG_4356 Canvas 60x90 ok.jpg" alt="IMG_4356.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/family/IMG_4497 copy.jpg" alt="IMG_4497.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/family/IMG_4606 Perbesaran 30x40.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/family/IMG_4804 copy.jpg" alt="IMG_4804.jpg" class="photoScroll1"  />
+              <img src="../assets/images/MomentPage/family/IMG_5166 copy.jpg" alt="IMG_5166.jpg" class="photoScroll1"  />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footerLogo">
+        <img src="../assets/images/Logo New E-MOMENT tanpa BG.png" alt="e-Moment.jpg">
+        <h3>STUDIO</h3>
+        <div class="infoStudio">
+          <div class="address">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <h5>Ruko Ruby TC 17 (belakang Abuba Steak)</h5>
+          </div>
+          <div class="phone">
+            <i class="fa fa-whatsapp"></i>
+            <h5>0888 5555 858</h5>
+          </div>
+        </div>
+      </div>
+      <div class="aboutUs">
+        <h3>ABOUT US</h3>
+        <div class="infoAboutUs">
+          <p>
+            e-Moment Photography menyediakan jasa foto dengan beberapa pilihan paket atau kebutuhan lengkap dengan studio foto dan beberapa properti pendukung sehingga Anda bisa mendapatkan hasil foto yang maksimal. 
+          </p>
+        </div>
+        <div class="sosmed">
+          <a href="#blank">
+            <i class="fa fa-whatsapp WA"></i>
+          </a>
+          <a href="#blank">
+            <i class="fa fa-facebook FB" aria-hidden="true"></i>
+          </a>
+          <a href="#blank">
+            <i class="fa fa-twitter Twtt" aria-hidden="true"></i>
+          </a>
+          <a href="#blank">
+            <i class="fa fa-linkedin In" aria-hidden="true"></i>
+          </a>
+          <a href="#blank">
+            <i class="fa fa-link Link" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="mustRead">
+        <h3>SERVICES</h3>
+        <div class="infoMustRead">
+          <ul class="infoLinkMustRead">
+            <li>
+              <a href="#blank">Prewedding Outdoor</a>
+            </li>
+            <li>
+              <a href="#blank">Prewedding Studio</a>
+            </li>
+            <li>
+              <a href="#blank">Wedding</a>
+            </li>
+            <li>
+              <a href="#blank">Graduation</a>
+            </li>
+            <li>
+              <a href="#blank">Family</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerGallery">
+        <div class="fooImage">
+          <img src="../assets/images/Homepage/IMG_4746 copy.jpg" alt="photo.jpg">
+          <img src="../assets/images/Homepage/IMG_9624 copy.jpg" alt="photo.jpg">
+        </div>
+        <div class="fooImage">
+          <img src="../assets/images/Homepage/IMG_7092 Perbesaran 30x40.jpg" alt="photo.jpg">
+          <img src="../assets/images/Homepage/IMG_4356 Canvas 60x90 ok.jpg" alt="photo.jpg">
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- moment tabs -->
+    <script>
+      function openMoment(evt, momentName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("moments");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tabLink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" fillBg", "");
+        }
+        document.getElementById(momentName).style.display = "block";
+        evt.currentTarget.className += " fillBg";
+      }
+    </script>
+
+    <!-- lightbox -->
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        // captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+  </body>
+</html>

@@ -4,6 +4,7 @@
  * Licensed under ISC 
  */
 
+@charset "UTF-8";
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -13290,8 +13291,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/webfonts/fa-brands-400.eot");
-  src: url("../fonts/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-brands-400.woff2") format("woff2"), url("../fonts/webfonts/fa-brands-400.woff") format("woff"), url("../fonts/webfonts/fa-brands-400.ttf") format("truetype"), url("../fonts/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands';
@@ -13306,8 +13307,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/webfonts/fa-regular-400.eot");
-  src: url("../fonts/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-regular-400.woff2") format("woff2"), url("../fonts/webfonts/fa-regular-400.woff") format("woff"), url("../fonts/webfonts/fa-regular-400.ttf") format("truetype"), url("../fonts/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("../fonts/fa-regular-400.eot");
+  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -13322,8 +13323,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../fonts/webfonts/fa-solid-900.eot");
-  src: url("../fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../fonts/webfonts/fa-solid-900.woff") format("woff"), url("../fonts/webfonts/fa-solid-900.ttf") format("truetype"), url("../fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
@@ -15503,6 +15504,136 @@ readers do not read off random characters that represent icons */
 .fa.fa-cab:before {
   content: "\f1ba"; }
 
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("../images/ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("../fonts/slick.eot");
+  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -25px; }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "←"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+.slick-next {
+  right: -25px; }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "→"; }
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
+
 section {
   margin: 100px 0; }
 
@@ -15555,65 +15686,8 @@ html {
       line-height: 30px;
       text-align: left; }
   /* serviceSection */
-  .jumboService {
-    display: none; }
-  .serviceMobile {
-    margin-top: 40vh !important;
-    margin-left: -6vw !important; }
-  .serviceText {
-    width: 5rem !important;
-    height: 50px !important;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: left;
-    -webkit-justify-content: left;
-    -ms-flex-pack: left;
-    justify-content: left;
-    -webkit-box-align: left;
-    -webkit-align-items: left;
-    -ms-flex-align: left;
-    align-items: left;
-    text-align: left;
-    padding: 20px;
-    margin-left: 6vw;
-    /* margin-top: 40vh !important; */
-    /* border: 1px red solid; */ }
-    .serviceText h3 {
-      font-family: 'Playfair Display', serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 25px;
-      line-height: 51px; }
-    .serviceText span {
-      width: 100px;
-      /* height: 5px !important; */
-      border: 2px #FFC602 solid;
-      /* background-color: #FFC602; */
-      margin-top: -15px !important; }
-  .serviceMobile .card {
-    width: 80% !important;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    font-family: 'Raleway', sans-serif;
-    margin: 10vh 0 5vh 14.5vw !important; }
-  .serviceMobile .card-body h5 {
-    font-style: normal !important;
-    font-weight: 600 !important;
-    font-size: 25px !important;
-    line-height: 26px !important;
-    text-align: center; }
-  .serviceMobile .card-body p {
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 15px !important;
-    line-height: 25px !important;
-    text-align: center; }
+  /* margin-top: 40vh !important; */
+  /* border: 1px red solid; */
   /* moment mobile */
   .container-moments {
     display: none; }
@@ -15715,222 +15789,7 @@ html {
     margin-right: -30px; }
   .familyMomentMobile {
     margin-top: 800px; }
-  /* price section */
-  .container-price {
-    width: 100%;
-    height: 900px;
-    margin-top: 310%;
-    /* border: 1px red solid; */ }
-  .price {
-    width: 80%;
-    height: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: left;
-    -webkit-justify-content: left;
-    -ms-flex-pack: left;
-    justify-content: left;
-    -webkit-box-align: left;
-    -webkit-align-items: left;
-    -ms-flex-align: left;
-    align-items: left;
-    margin-left: 10vw; }
-    .price h3 {
-      width: 250px;
-      height: 64px;
-      font-family: 'Playfair Display', serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 25px; }
-    .price span {
-      width: 160px;
-      height: 5px;
-      background-color: #FFC602;
-      margin-top: 35px;
-      position: absolute; }
-  .pricelist {
-    width: 100%;
-    height: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 0px 0 0 20px; }
-  .pricelistBox {
-    width: 80%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 0 37px 30px 0;
-    border: 2px solid #826A17;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-top: 16px solid #826A17;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    color: #826A17; }
-    .pricelistBox h3 {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 25px;
-      line-height: 35px;
-      margin-top: 10px; }
-    .pricelistBox small {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      margin-top: 20px; }
-    .pricelistBox .rupiah {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      /* margin-top: -30px; */
-      /* margin-top: 5vh; */ }
-  .rupiah p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px; }
-  .rupiah h3 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 35px;
-    color: #333333;
-    margin-left: 5px; }
-  .rewards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-top: 28px; }
-    .rewards h4 {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      color: #333333;
-      line-height: 23px;
-      margin-top: -2px;
-      margin-left: 17px; }
-  .rewards1,
-  .rewards2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-  .pricelistBox a {
-    width: 80%;
-    height: 53px;
-    background-color: #826A17;
-    border-radius: 5px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-bottom: 20px; }
-    .pricelistBox a i {
-      padding: 14px; }
-  .pricelist2 {
-    border: 2px solid #FFC602;
-    border-top: 16px solid #FFC602;
-    color: #FFC602; }
-    .pricelist2 a {
-      background-color: #FFC602; }
-  .detailPackage {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    /* margin-left: 33px; */ }
-    .detailPackage a {
-      width: 70%;
-      height: 36px;
-      background-color: #826A17;
-      font-family: 'Raleway', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      color: #FFFFFF;
-      text-decoration: none;
-      padding: 10px 39px 10px 50px !important;
-      border-radius: 5px;
-      /* margin-top: 86px; */ }
-  small {
-    width: 98px;
-    height: 20px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    float: right;
-    margin-top: 40px !important;
-    margin-left: 20px !important; } }
+  /* price section */ }
 
 /* Article section */
 /* footer section */
@@ -16842,10 +16701,6 @@ form input {
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Homepage */
-  .landingText {
-    width: 80%;
-    margin-left: 9vw !important; }
   /* priceSection */
   .container-price {
     width: 100%;
@@ -17065,92 +16920,9 @@ form input {
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
     display: none; }
-  .landingText {
-    width: 80%;
-    font-family: 'Playfair Display', serif;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    margin-top: -10vh !important;
-    margin-left: 9.5vw !important; }
-    .landingText h5 {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 25px;
-      line-height: 53px; }
-    .landingText p {
-      font-family: 'Raleway', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 13px;
-      line-height: 30px;
-      text-align: left; }
   /* serviceSection */
   .serviceMobile {
     display: none; }
-  .jumboService {
-    background-image: url("/assets/images/Homepage/IMG_9624 copy.jpg");
-    background-position: center;
-    background-size: cover;
-    background-position-y: -90px !important;
-    background: -webkit-linear-gradient(bottom rgba(0, 0, 0, 0.5), black);
-    background: linear-gradient(to top rgba(0, 0, 0, 0.5), black);
-    background-repeat: no-repeat;
-    background-color: transparent;
-    height: 70vh;
-    margin-top: 5vh; }
-  .serviceSection h3 {
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 64px;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
-    margin-top: -5vh; }
-  .serviceBoxImage {
-    width: 100%;
-    height: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .serviceBoxImage .card {
-      width: 10.5rem !important; }
-      .serviceBoxImage .card .card-img-top {
-        width: 245px !important;
-        height: 98px !important;
-        background-position: center;
-        background-size: cover;
-        object-fit: contain;
-        margin-left: -3vw; }
-    .serviceBoxImage .card-body {
-      font-family: 'Raleway', sans-serif;
-      color: black; }
-      .serviceBoxImage .card-body h5 {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 26px;
-        text-align: center; }
-      .serviceBoxImage .card-body .card-text {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 25px;
-        text-align: center; }
   /* moment section */
   /* moment mobile */
   .container-momentMobile {
@@ -17429,214 +17201,6 @@ form input {
   .cursor6 {
     margin: -11.5vh 0 0 47.5vw !important; }
   /* Prices section */
-  .container-price {
-    width: 100%;
-    height: 900px;
-    margin-top: -25vh !important; }
-  .price {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .price h3 {
-      width: 310px;
-      height: 64px;
-      font-family: 'Playfair Display', serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 48px;
-      line-height: 64px;
-      text-align: center; }
-    .price span {
-      width: 409px;
-      height: 5px;
-      background-color: #FFC602;
-      margin-top: 100px;
-      position: absolute; }
-  .pricelist {
-    width: 100%;
-    height: 50vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 84px 250px 0 0px !important; }
-  .pricelistBox {
-    width: 196px;
-    height: 512px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border: 2px solid #826A17;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-top: 16px solid #826A17;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    color: #826A17;
-    margin: 0 30px 37px 0; }
-    .pricelistBox h3 {
-      width: 100px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 35px; }
-    .pricelistBox small {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      margin-top: 15px; }
-    .pricelistBox .rupiah {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      /* margin-top: -30px; */ }
-  .rupiah p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px; }
-  .rupiah h3 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    color: #333333;
-    margin-left: 5px; }
-  .rewards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-top: 58px; }
-    .rewards h4 {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 15px;
-      color: #333333;
-      line-height: 23px;
-      margin-top: -2px;
-      margin-left: 17px; }
-  .rewards1,
-  .rewards2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-  .pricelistBox a {
-    width: 175px;
-    height: 53px;
-    background-color: #826A17;
-    border-radius: 5px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-top: 40px; }
-    .pricelistBox a i {
-      padding: 15px; }
-  .pricelist2 {
-    border: 2px solid #FFC602;
-    border-top: 16px solid #FFC602;
-    color: #FFC602; }
-  .pricelist3 small {
-    margin-top: 30px; }
-  .pricelist3 .titleList {
-    margin: -10px 0 0px 0; }
-  .pricelist3 .rupiah {
-    margin-top: 80px; }
-  .pricelist3 .number,
-  .pricelist3 .rupiah p {
-    margin-top: -120px; }
-  .pricelist3 .rewards {
-    margin-top: 20px; }
-  .pricelist2 a {
-    background-color: #FFC602; }
-  .detailPackage {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: -35px; }
-    .detailPackage a {
-      width: 317px;
-      height: 56px;
-      background-color: #826A17;
-      font-family: 'Raleway', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      color: #FFFFFF;
-      text-decoration: none;
-      padding: 15px 59px 15px 73px;
-      border-radius: 5px;
-      margin-top: 86px; }
   /* Testimonials section */
   /* Article section */
   .container-article {
@@ -18534,36 +18098,6 @@ form input {
   /* HOMEPAGE */
   .navbar-toggler {
     border: none; }
-  .carousel-item .w-100 {
-    width: 100vw;
-    height: 685px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    object-fit: cover; }
-  .landingText {
-    width: 80%;
-    /* height: 15rem ; */
-    font-family: 'Playfair Display', serif;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    margin-top: -10vh !important;
-    margin-left: 9.5vw !important; }
-    .landingText h5 {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 40px;
-      line-height: 53px; }
-    .landingText p {
-      font-family: 'Raleway', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: left; }
-  .carousel-control-prev,
-  .carousel-control-next {
-    display: none; }
   /* navbar */
   /* navbarCustom */
   .container-navbar {
@@ -18620,73 +18154,6 @@ form input {
     color: #FFC602; }
   /* aboutSection */
   /* serviceSection */
-  .serviceMobile {
-    display: none; }
-  .jumboService {
-    background-image: url("/assets/images/Homepage/IMG_9624 copy.jpg");
-    background-position: center;
-    background-size: cover;
-    background-position-y: -90px !important;
-    background: -webkit-linear-gradient(bottom rgba(0, 0, 0, 0.5), black);
-    background: linear-gradient(to top rgba(0, 0, 0, 0.5), black);
-    background-repeat: no-repeat;
-    background-color: transparent;
-    height: 70vh;
-    margin-top: 5vh; }
-  .serviceSection h3 {
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 64px;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
-    margin-top: -5vh; }
-  .serviceBoxImage {
-    width: 100%;
-    height: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .serviceBoxImage .card {
-      /* width: 16.5rem !important;   */
-      width: 345px !important; }
-      .serviceBoxImage .card .card-img-top {
-        width: 345px !important;
-        height: 198px !important;
-        background-position: center;
-        background-size: cover;
-        object-fit: contain;
-        margin-left: -3vw; }
-    .serviceBoxImage .card-body {
-      font-family: 'Raleway', sans-serif;
-      color: black; }
-      .serviceBoxImage .card-body h5 {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 26px;
-        text-align: center; }
-      .serviceBoxImage .card-body .card-text {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 25px;
-        text-align: center; }
   /* moment section */
   /* moment mobile */
   .container-momentMobile {
@@ -20220,8 +19687,53 @@ img.hover-shadow {
       font-size: 15px;
       margin: 6px 15px; } }
 
-@media screen and (max-width: 767px) {
-  padding: 20px; }
+.carousel-item .w-100 {
+  width: 100vw;
+  height: 650px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  object-fit: cover; }
+  @media screen and (max-width: 480px) {
+    .carousel-item .w-100 {
+      height: 400px; } }
+
+.landingText {
+  width: 80%;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  top: 70%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -10%);
+  -ms-transform: translate(-50%, -10%);
+  transform: translate(-50%, -10%);
+  background-color: rgba(255, 255, 255, 0.8); }
+  .landingText h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px; }
+    @media screen and (max-width: 991px) {
+      .landingText h5 {
+        font-size: 25px; } }
+    @media screen and (max-width: 768px) {
+      .landingText h5 {
+        line-height: 30px; } }
+  .landingText p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left; }
+    @media screen and (max-width: 991px) {
+      .landingText p {
+        font-size: 10px; } }
+    @media screen and (max-width: 768px) {
+      .landingText p {
+        line-height: 15px; } }
 
 .title-section {
   font-family: 'Playfair Display', serif;
@@ -20308,44 +19820,31 @@ img.hover-shadow {
     float: right; }
 
 .pricelistBox {
-  width: 375px;
-  height: 512px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0 37px 37px 0;
   border: 2px solid #826A17;
   box-sizing: border-box;
   border-radius: 5px;
   border-top: 16px solid #826A17;
   font-family: 'Raleway', sans-serif;
-  text-align: center;
-  color: #826A17; }
+  color: #826A17;
+  padding: 60px 30px; }
+  @media screen and (max-width: 767px) {
+    .pricelistBox {
+      margin-bottom: 20px; } }
   .pricelistBox h3 {
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
-    line-height: 35px; }
+    line-height: 35px;
+    text-align: center;
+    display: block; }
   .pricelistBox small {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    margin-top: 38px; }
+    margin-top: 38px;
+    text-align: center;
+    display: block; }
   .pricelistBox .rupiah {
     display: -webkit-box;
     display: -webkit-flex;
@@ -20364,6 +19863,43 @@ img.hover-shadow {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+  .pricelistBox .rewards {
+    margin-top: 58px; }
+    @media screen and (min-width: 992) {
+      .pricelistBox .rewards {
+        margin-left: 50px; } }
+    .pricelistBox .rewards.reward-yellow h4::before {
+      color: #FFC602; }
+    .pricelistBox .rewards h4 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      color: #333333;
+      position: relative;
+      margin-left: 25px; }
+      .pricelistBox .rewards h4::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-size: 20px;
+        position: absolute;
+        left: -30px;
+        top: 0px; }
+  .pricelistBox a {
+    padding: 8px;
+    display: block;
+    background-color: #826A17;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 40px;
+    display: block; }
+    .pricelistBox a i {
+      padding: 7px 14px; }
 
 .rupiah p {
   font-style: normal;
@@ -20377,50 +19913,6 @@ img.hover-shadow {
   font-size: 35px;
   color: #333333;
   margin-left: 5px; }
-
-.rewards {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 58px; }
-  .rewards h4 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    color: #333333;
-    line-height: 23px;
-    margin-top: -2px;
-    margin-left: 17px; }
-
-.rewards1,
-.rewards2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row; }
-
-.pricelistBox a {
-  width: 335px;
-  height: 53px;
-  background-color: #826A17;
-  border-radius: 5px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #FFFFFF;
-  text-decoration: none;
-  margin-top: 40px; }
-  .pricelistBox a i {
-    padding: 14px; }
 
 .pricelist2 {
   border: 2px solid #FFC602;
@@ -20441,16 +19933,83 @@ img.hover-shadow {
     text-decoration: none;
     padding: 15px 59px 15px 73px;
     border-radius: 5px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    display: inline-block; }
+
+.jumboService {
+  background-image: url("/assets/images/Homepage/IMG_9624 copy.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: relative;
+  height: 100%; }
+  .jumboService::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0; }
+
+.serviceSection h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+  margin-top: -5vh; }
+
+.title-service {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 99;
+  margin-bottom: 50px; }
+
+.serviceBoxImage {
+  width: 90%;
+  margin: 0 auto; }
+  .serviceBoxImage .card .card-img-top {
+    height: 230px;
+    width: 100%;
+    overflow: hidden; }
+    .serviceBoxImage .card .card-img-top img {
+      background-position: center;
+      background-size: cover;
+      object-fit: cover;
+      width: 100%; }
+  .serviceBoxImage .card .card-body {
+    font-family: 'Raleway', sans-serif;
+    color: black; }
+    .serviceBoxImage .card .card-body h5 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center; }
+    .serviceBoxImage .card .card-body .card-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 25px;
+      text-align: center;
+      height: 130px; }
 
 .aboutPhoto {
   display: block;
   margin: 0 auto;
-  position: relative;
-  text-align: center; }
+  position: relative; }
   .aboutPhoto .photo1 img {
-    width: 215px;
-    height: 139px;
+    width: 315px;
+    height: 239px;
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -20461,8 +20020,8 @@ img.hover-shadow {
         position: relative;
         left: -20vw; } }
   .aboutPhoto .photo2 img {
-    width: 230px;
-    height: 142px;
+    width: 370px;
+    height: 242px;
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -20476,16 +20035,11 @@ img.hover-shadow {
         left: 8vw; } }
 
 .aboutText {
-  margin-top: 50px;
   padding: 0 15px;
   margin-bottom: 25px; }
-  @media screen and (min-width: 1025px) {
-    .aboutText {
-      width: 50%; } }
   @media screen and (min-width: 768px) {
     .aboutText {
       padding: 0px;
-      margin-top: 150px;
       margin-bottom: 0px; } }
   .aboutText h3 {
     font-family: 'Playfair Display', serif;
@@ -20518,6 +20072,78 @@ img.hover-shadow {
     text-decoration: none;
     display: inline-block;
     text-align: center; }
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
 
 .article {
   text-align: center;

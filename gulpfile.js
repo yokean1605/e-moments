@@ -69,26 +69,26 @@ function clean() {
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
-  // Bootstrap
-  // var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
-  //   .pipe(gulp.dest('./vendor/bootstrap'));
+  // slider Slick
+  var slick = gulp.src('./node_modules/slick-carousel/slick/slick.js')
+    .pipe(gulp.dest('./js/vendor'));
 
   var bootstrap = gulp.src('./node_modules/bootstrap/dist/js/bootstrap.bundle.js')
     .pipe(gulp.dest('./js/vendor'));
 
-  // Font Awesome CSS
-  // var fontAwesomeCSS = gulp.src('./node_modules/@fortawesome/fontawesome-free/css/**/*')
-  //   .pipe(gulp.dest('./vendor/fontawesome-free/css'));
   // Font Awesome Webfonts
-  var fontAwesomeWebfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
-    .pipe(gulp.dest('./fonts/webfonts'));
+  var fonst = gulp.src([
+    './node_modules/@fortawesome/fontawesome-free/webfonts/**/*',
+    './node_modules/slick-carousel/slick/fonts/**'])
+    .pipe(gulp.dest('./fonts'));
+
   // jQuery
   var jquery = gulp.src([
     './node_modules/jquery/dist/jquery.js*',
     '!./node_modules/jquery/dist/core.js'
   ])
     .pipe(gulp.dest('./js/vendor'));
-  return merge(bootstrap, fontAwesomeWebfonts, jquery);
+  return merge(bootstrap, fonst, jquery, slick);
 }
 
 // CSS task

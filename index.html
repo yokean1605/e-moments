@@ -98,8 +98,7 @@
 			<div class="row no-gutters h-100">
 				<div class="col-md-6 order-md-2">
 					<div class="aboutText">
-						<h3>About</h3>
-						<span></span>
+						<h3 class="title-section">About</h3>
 						<p>
 							e-Moment Photography menyediakan jasa foto dengan beberapa pilihan
 							paket atau kebutuhan lengkap dengan studio foto dan beberapa
@@ -124,6 +123,7 @@
 		</div>
 	</section>
 
+	<!-- Service -->
 	<section class="jumboService py-5">
 		<div class="container">
 			<div class="row">
@@ -263,6 +263,83 @@
 			</div>
 	</section>
 
+	<!-- wall of moments moments -->
+	<section class="portfolio section">
+		<div class="container">
+			<h3 class="title-section">Wall Of Beautiful Moments</h3>
+
+			<div class="filters text-center">
+				<ul class="list-menus list-inline">
+					<li class="list-inline-item active" data-filter="*">FAMILY</li>
+					<li class="list-inline-item" data-filter=".maternity">MATERNITY</li>
+					<li class="list-inline-item" data-filter=".graduation">GRADUATION</li>
+					<li class="list-inline-item" ddata-filter=".newborn">NEWBORN</li>
+					<li class="list-inline-item" data-filter=".group">GROUP</li>
+				</ul>
+			</div>
+
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="col-sm-4 all maternity">
+						<div class="item-moments-box">
+							<img src="assets/images/Homepage/IMG_5485 copy.jpg" alt="photo.jpg" class="img-fluid" />
+							<div class="middle">
+								<a href="#blank" onclick="openModal();currentSlide(1)">VIEW STORY</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 all newborn maternity">
+						<div class="item-moments-box">
+							<img src="assets/images/Homepage/IMG_7092 Perbesaran 30x40.jpg" alt="photo.jpg"
+								class="img-fluid" />
+							<div class="middle">
+								<a href="#blank" onclick="openModal();currentSlide(2)">VIEW STORY</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 all maternity group">
+						<div class="item-moments-box">
+							<img src="assets/images/Homepage/IMG_4356 Canvas 60x90 ok.jpg" alt="photo.jpg"
+								class="img-fluid" />
+							<div class="middle">
+								<a href="#blank" onclick="openModal();currentSlide(3)">VIEW STORY</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 all group">
+						<div class="item-moments-box">
+							<img src="assets/images/Homepage/IMG_4746 copy.jpg" alt="IMG_0852_Cover_Album.jpg"
+								class="img-fluid" />
+							<div class="middle">
+								<a href="#blank" onclick="openModal();currentSlide(4)">VIEW STORY</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 all newborn group">
+						<div class="item-moments-box">
+							<img src="assets/images/Homepage/IMG_9624 copy.jpg" alt="IMG_9958_copy.jpg"
+								class="img-fluid" />
+							<div class="middle">
+								<a href="#blank" onclick="openModal();currentSlide(5)">VIEW STORY</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 all group">
+						<div class="item-moments-box">
+							<img src="assets/images/MomentPage/family/IMG_4647 copy.jpg" alt="IMG_0693_copy.jpg"
+								class="img-fluid" />
+							<div class="middle">
+								<a href="#blank" onclick="openModal();currentSlide(6)">VIEW STORY</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
 	<!-- Price Package -->
 	<section class="section-package" id="package">
 		<div class="container">
@@ -276,8 +353,8 @@
 							<h3>Graduation Series</h3>
 							<small>mulai dari</small>
 							<div class="rupiah">
-								<p>Rp</p>
-								<h3>1.000.000</h3>
+								<span>Rp</span>
+								<span class="price">1.000.000</span>
 							</div>
 							<div class="rewards">
 								<h4>Paper Graduation</h4>
@@ -295,8 +372,8 @@
 							<h3>Maternity Series</h3>
 							<small>mulai dari</small>
 							<div class="rupiah">
-								<p>Rp</p>
-								<h3>1.000.000</h3>
+								<span>Rp</span>
+								<span class="price">1.000.000</span>
 							</div>
 							<div class="rewards reward-yellow">
 								<h4>Paper Maternity</h4>
@@ -312,8 +389,8 @@
 							<h3 class="titleList">Birthday/ Aqiqah</h3>
 							<small>mulai dari</small>
 							<div class="rupiah">
-								<p>Rp</p>
-								<h3 class="number">1.000.000</h3>
+								<span>Rp</span>
+								<span class="price">1.000.000</span>
 							</div>
 							<div class="rewards">
 								<h4>Outdoor</h4>
@@ -345,7 +422,7 @@
 						<div class="testi testiBox">
 							<img src="assets/images/MomentPage/graduation/IMG_8033 Album Tengah.jpg" alt="photo.jpg"
 								class="img-fluid" />
-							<div class="texts">
+							<div class="texts clearfix">
 								<h5>
 									"Terima kasih e-Momment, wisuda Saya dapat diabadikan dengan
 									sangat baik dan keluarga saya dapat berbahagia bersama”
@@ -359,7 +436,7 @@
 							<img class="img-fluid"
 								src="assets/images/Homepage/103047977_258872678719117_5728251126975692118_n.jpg"
 								alt="photo.jpg" />
-							<div class="texts">
+							<div class="texts clearfix">
 								<h5>
 									“Saya dan istri saya sangat bahagia, moment prewedding kami dapat
 									berlangsung dengan baik dan dengan kualitas yang luar biasa”
@@ -371,7 +448,7 @@
 					<div class="col-md-4">
 						<div class="testi testiBox">
 							<img class="img-fluid" src="assets/images/Homepage/IMG_9865 copy.jpg" alt="photo.jpg" />
-							<div class="texts">
+							<div class="texts clearfix">
 								<h5>
 									“Dengan e-momment, Saya dapat mengenang saat saya mengandung anak
 									pertama kami. Terima kasih e-momment, hasilnya sangat memuaskan"
@@ -575,6 +652,7 @@
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/bootstrap.bundle.min.js"></script>
 	<script src="js/vendor/slick.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
 	<script src="js/main.min.js"></script>
 
 </body>

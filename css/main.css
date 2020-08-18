@@ -15666,25 +15666,50 @@ section {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
-.populer-post > .title-section {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px !important;
-  line-height: 21px; }
+.sidebar-post {
+  margin: 50px 0; }
+  .sidebar-post > .title-section {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px !important;
+    line-height: 21px; }
+  @media screen and (max-width: 991px) {
+    .sidebar-post .card-populer-post {
+      width: 48%;
+      float: left;
+      margin-right: 5px; } }
+  .sidebar-post .card-populer-post .card-title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: black; }
+  .sidebar-post .list-categori li {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    background: url("./../images/kotak-categori.png") no-repeat left 8px;
+    padding-left: 20px;
+    margin-bottom: 10px; }
 
-@media screen and (max-width: 991px) {
-  .populer-post .card-populer-post {
-    width: 48%;
-    float: left;
-    margin-right: 5px; } }
-
-.populer-post .card-populer-post .card-title {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
+.form-find > input {
+  border: none;
   font-size: 18px;
-  line-height: 21px;
-  color: black; }
+  background-color: #F4F4F4; }
+  .form-find > input:focus {
+    box-shadow: none;
+    background-color: #F4F4F4; }
+
+.form-find .btn-find {
+  background-color: #DAA520;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px; }
 
 .sub-title {
   font-family: 'Raleway', sans-serif;

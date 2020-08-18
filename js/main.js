@@ -46,4 +46,10 @@ $(document).ready(function () {
         }
     })
 
+    // accodion icon down and up
+    $('.btn-accordions').on('click', function () {
+        // $('#clpse-icon').toggleClass("fa-arrow-up-animated");
+        $('#clpse-icon').toggleClass("fa-minus fa-plus-circle");
+    });
+
 });

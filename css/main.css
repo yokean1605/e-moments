@@ -15640,6 +15640,146 @@ section {
     section {
       margin: 50px 0; } }
 
+.card-accordion {
+  border: 1px solid #B7B7B7; }
+  .card-accordion > .card-header {
+    background-color: #826A17; }
+    .card-accordion > .card-header h5 {
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .card-accordion > .card-header h5 > .btn-accordions {
+        font-style: normal;
+        font-weight: 500 !important;
+        font-size: 24px;
+        color: white;
+        line-height: 28px; }
+        .card-accordion > .card-header h5 > .btn-accordions:focus, .card-accordion > .card-header h5 > .btn-accordions:hover {
+          text-decoration: none; }
+      .card-accordion > .card-header h5 > .strong {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: auto;
+        font-weight: 600 !important;
+        font-size: 18px;
+        font-style: italic; }
+
+.title-additional {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #826A17; }
+
+.title-cardbody-additional {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #826A17;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  background-position: left !important;
+  background-size: 30px !important; }
+  @media screen and (max-width: 768px) {
+    .title-cardbody-additional {
+      font-size: 20px; } }
+  .title-cardbody-additional.kotak {
+    background: url(./../images/rectangle-accordion.png) no-repeat left 7px;
+    background-size: 25px !important; }
+  .title-cardbody-additional.clock {
+    background: url(./../images/weker.png) no-repeat left 7px; }
+  .title-cardbody-additional.plus {
+    background: url(./../images/plus-accordion.png) no-repeat left 7px; }
+  .title-cardbody-additional span.count-additional {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #826A17; }
+
+.list-additional {
+  margin-left: 38px; }
+  .list-additional li {
+    font-family: 'Raleway', sans-serif;
+    color: #826A17;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 10px; }
+
+.fa-arrow-down-animated {
+  -webkit-animation-name: collapse-icon-animation;
+  animation-name: collapse-icon-animation;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.fa-arrow-up-animated {
+  -webkit-animation-name: collapse-icon-animation-reverse;
+  animation-name: collapse-icon-animation-reverse;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes collapse-icon-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); } }
+
+@keyframes collapse-icon-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); } }
+
+@-webkit-keyframes collapse-icon-animation-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes collapse-icon-animation-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 .title-section {
   font-family: 'Playfair Display', serif;
   font-style: normal;

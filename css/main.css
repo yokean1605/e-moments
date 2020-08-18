@@ -15636,6 +15636,89 @@ readers do not read off random characters that represent icons */
 
 section {
   margin: 100px 0; }
+  @media screen and (max-width: 767px) {
+    section {
+      margin: 50px 0; } }
+
+.title-section {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  position: relative;
+  margin-bottom: 30px;
+  display: inline-block; }
+  @media screen and (max-width: 991px) {
+    .title-section {
+      font-size: 30px;
+      line-height: 28px; } }
+  .title-section::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #FFC602;
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.populer-post > .title-section {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px !important;
+  line-height: 21px; }
+
+@media screen and (max-width: 991px) {
+  .populer-post .card-populer-post {
+    width: 48%;
+    float: left;
+    margin-right: 5px; } }
+
+.populer-post .card-populer-post .card-title {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: black; }
+
+.sub-title {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9C9C9C; }
+
+.content-post h1.title-post {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  color: #826A17; }
+
+.content-post .img-post {
+  margin-bottom: 30px; }
+
+.content-post .content-paragraph p,
+.content-post span {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px; }
+
+.card-populer-post .img-popouler-post {
+  height: 90px;
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.15));
+  object-fit: cover;
+  object-position: top; }
 
 .bg-default {
   background-color: #826A17; }
@@ -19496,32 +19579,6 @@ img.hover-shadow {
       .landingText p {
         line-height: 15px; } }
 
-.title-section {
-  font-family: 'Playfair Display', serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 64px;
-  position: relative;
-  margin-bottom: 30px;
-  display: inline-block; }
-  @media screen and (max-width: 991px) {
-    .title-section {
-      font-size: 30px;
-      line-height: 28px; } }
-  .title-section::after {
-    content: "";
-    width: 100%;
-    height: 5px;
-    background-color: #FFC602;
-    display: inline-block;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-
 @media screen and (max-width: 767px) {
   .testiBox {
     margin-bottom: 30px; } }
@@ -20070,7 +20127,14 @@ ul.list-menus {
     font-weight: 600;
     font-size: 23px;
     line-height: 35px;
-    height: 70px; }
+    height: 70px;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
     @media screen and (max-width: 991px) {
       .content-articles h4 {
         font-size: 16px;
@@ -20083,7 +20147,14 @@ ul.list-menus {
     font-size: 15px;
     line-height: 20px;
     color: #9C9C9C;
-    height: 100px; }
+    height: 100px;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
     @media screen and (max-width: 991px) {
       .content-articles p {
         font-size: 12px;

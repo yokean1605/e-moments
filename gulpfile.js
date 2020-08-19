@@ -156,7 +156,7 @@ function watchFiles() {
 }
 
 // Define complex tasks
-const vendor = gulp.series(clean, modules);
+const vendor = gulp.series(modules);
 const build = gulp.series(vendor, gulp.parallel(css, js, jsVendor));
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 

@@ -16075,7 +16075,13 @@ small.start {
   font-weight: 600;
   font-size: 25px;
   line-height: 28px;
-  width: 100%; }
+  width: 100%;
+  border: 2px solid transparent; }
+  .btn-submit:hover,
+  .btn-sendWA:hover {
+    background-color: transparent;
+    border: 2px solid #826A17;
+    color: #826A17; }
   @media screen and (max-width: 991px) {
     .btn-submit,
     .btn-sendWA {
@@ -16084,13 +16090,12 @@ small.start {
 .btn-submit {
   color: white;
   background-color: #826A17;
-  border: none;
   padding: 10px; }
 
 .btn-sendWA {
   color: black;
   background-color: transparent;
-  border: 1px black solid;
+  border: 2px black solid;
   text-decoration: none;
   line-height: 34px; }
 
@@ -19618,6 +19623,9 @@ img.hover-shadow {
   align-items: center;
   color: white;
   border-radius: 0px; }
+  .btn-outline-tranparent:hover {
+    background-color: white;
+    color: #826A17; }
 
 .btn-wa {
   font-family: Raleway;
@@ -19641,6 +19649,9 @@ img.hover-shadow {
   align-items: center;
   color: #826A17;
   border-radius: 0px; }
+  .btn-wa:hover {
+    background-color: transparent;
+    color: white !important; }
 
 .navbar-custom {
   min-height: 183px;
@@ -19675,7 +19686,7 @@ img.hover-shadow {
   padding-inline-end: 63px;
   color: #ffffff;
   text-decoration: none; }
-  .nav-item .nav-link:hover {
+  .nav-item .nav-link:hover, .nav-item .nav-link.active {
     color: #FFC602; }
   @media screen and (max-width: 991px) {
     .nav-item .nav-link {
@@ -19889,7 +19900,12 @@ small {
     color: #FFFFFF;
     text-decoration: none;
     margin-top: 40px;
+    border: 2px solid transparent;
     display: block; }
+    .pricelistBox a:hover {
+      background-color: transparent;
+      border: 2px solid #826A17;
+      color: #826A17; }
     @media screen and (max-width: 992) {
       .pricelistBox a {
         font-size: 12px;
@@ -19923,7 +19939,12 @@ small {
   border-top: 16px solid #FFC602;
   color: #FFC602; }
   .pricelist2 a {
-    background-color: #FFC602; }
+    background-color: #FFC602;
+    border: 2px solid transparent; }
+    .pricelist2 a:hover {
+      background-color: transparent;
+      border: 2px solid #FFC602;
+      color: #FFC602; }
 
 .detailPackage {
   text-align: center; }
@@ -21835,7 +21856,8 @@ ul.list-menus {
 
 .article {
   text-align: center;
-  margin: 25px 0; }
+  margin-bottom: 25px;
+  padding-top: 0px !important; }
 
 .articles {
   background-color: white;
@@ -22004,3 +22026,42 @@ footer {
     .footer-content .media-sosial-item a > i {
       position: relative;
       top: -3px; }
+
+.toTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+  border-radius: 50%;
+  font-weight: 600;
+  padding: 20px;
+  box-shadow: 0 0 0 0 black;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite; }
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
+  .toTop span {
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }

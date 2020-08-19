@@ -2,8 +2,32 @@ $(window).on('load', function () { // makes sure the whole site is loaded
     $('#status').fadeOut(); // will first fade out the loading animation 
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
     $('body').delay(350).css({ 'overflow': 'visible' });
+
+    $(document).scroll(function () {
+        var scrollDistance = $(this).scrollTop();
+        if (scrollDistance > 500) {
+            $('.toTop').fadeIn();
+        } else {
+            $('.toTop').fadeOut();
+        }
+    });
 })
+
 $(function () {
+
+    // Smooth scrolling using jQuery easing
+    $('a.nav-link[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: (target.offset().top)
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
+        }
+    });
 
     $('.slickJs').slick({
 
@@ -71,6 +95,14 @@ $(document).ready(function () {
         max_width: '95%',
         max_height: '98%',
         show_author: false
+    });
+
+    $('.toTop').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
     });
 
 });

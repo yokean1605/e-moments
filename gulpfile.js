@@ -85,6 +85,7 @@ function modules() {
   // jQuery
   var jquery = gulp.src([
     './node_modules/jquery/dist/jquery.js*',
+    './node_modules/jquery.easing/jquery.easing.js',
     '!./node_modules/jquery/dist/core.js'
   ])
     .pipe(gulp.dest('./js/vendor'));

@@ -16340,7 +16340,7 @@ html {
 .contactHero {
   width: 100%;
   height: 470px;
-  background-image: url("/assets/images/ContactUs/IMG_6520 copy.jpg");
+  background-image: url("./../images/baby.jpg");
   background-position: center;
   background-size: cover;
   object-fit: cover;

@@ -52,4 +52,19 @@ $(document).ready(function () {
         $('#clpse-icon').toggleClass("fa-minus fa-plus-circle");
     });
 
+    // live handler
+    lc_lightbox('.elem', {
+        wrap_class: 'lcl_fade_oc',
+        gallery: true,
+        thumb_attr: 'data-lcl-thumb',
+
+        skin: 'minimal',
+        radius: 0,
+        padding: 0,
+        border_w: 0,
+        max_width: '95%',
+        max_height: '98%',
+        show_author: false
+    });
+
 });

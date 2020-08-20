@@ -22057,7 +22057,8 @@ footer {
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); }
   100% {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
-  .toTop span {
+  .toTop span,
+  .toTop i {
     font-size: 13px;
     position: absolute;
     top: 50%;
